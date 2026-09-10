@@ -140,6 +140,26 @@ button {
   text-align: left;
 }
 
+.hero__copy {
+  text-align: left;
+}
+
+.hero__tag {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero__lead {
+  margin: 8px 0 0;
+  font-size: 16px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 34em;
+}
+
 .lead-form--hero {
   margin-top: 20px;
 }
@@ -708,10 +728,13 @@ button {
     align-items: end;
   }
 
-  .hero__title {
+  .hero__copy {
     grid-column: 1;
     align-self: end;
-    padding-bottom: 8px;
+  }
+
+  .hero__title {
+    max-width: 11ch;
   }
 
   .lead-form--hero {
@@ -770,5 +793,10 @@ button {
     font-size: clamp(42px, 4.4vw, 56px);
     line-height: 1.0;
     max-width: 11ch;
+  }
+
+  .hero__lead {
+    font-size: 16px;
+    margin-top: 8px;
   }
 }
