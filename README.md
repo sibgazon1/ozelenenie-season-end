@@ -2,4 +2,4 @@
 
 Публичная посадочная с кейсами до/после.
 
-Страница: https://drtduck.github.io/ozelenenie-season-end/
+Страница: https://sibgazon1.github.io/ozelenenie-season-end/
