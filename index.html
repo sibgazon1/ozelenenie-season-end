@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#16301A" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="landing-id" content="ozelenenie-season-end" />
+  <meta
+    name="description"
+    content="Озеленение от 100 м² в Новосибирске и области. Оставьте заявку - посчитаем объект и дадим предложение под финал сезона."
+  />
+  <title>Озеленение участка · получить предложение | Сибирские газоны</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="header__brand" href="https://gazony.ru" target="_blank" rel="noopener">
+      <img class="header__logo" src="assets/logo.webp" width="168" height="48" alt="Сибирские газоны" draggable="false" />
+    </a>
+    <a class="header__call" href="tel:+73833830060">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6.6 10.8a15.9 15.9 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/>
+      </svg>
+      Позвонить
+    </a>
+  </header>
+
+  <section class="hero" id="lead-hero">
+    <div class="hero__media" aria-hidden="true">
+      <img class="hero__img" id="hero-img" src="assets/cases/cottage/03-after.jpg" alt="" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__inner">
+      <p class="hero__tag">Новосибирск и область · финал сезона</p>
+      <h1 class="hero__title">Участок, куда хочется возвращаться</h1>
+      <p class="hero__lead">
+        Озеленение под ключ от 100&nbsp;м². Оставьте заявку - посчитаем объект
+        и дадим предложение под финал сезона.
+      </p>
+
+      <form class="lead-form lead-form--hero" data-landing-form data-form-id="hero" novalidate>
+        <label class="field">
+          <span class="field__label">Имя</span>
+          <input class="field__input" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required />
+        </label>
+        <label class="field">
+          <span class="field__label">Телефон</span>
+          <input class="field__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required />
+        </label>
+        <label class="consent">
+          <input type="checkbox" name="consent" required />
+          <span>Согласен на обработку персональных данных для связи и консультации</span>
+        </label>
+        <p class="form-error is-hidden" data-form-error role="alert"></p>
+        <button type="submit" class="btn btn--primary btn--full">Получить предложение</button>
+        <p class="form-hint">Обычно перезваниваем в течение рабочего дня · без спама</p>
+        <p class="form-note">Берём объекты от 100&nbsp;м²</p>
+      </form>
+    </div>
+  </section>
+
+  <main class="main">
+    <section class="sheet" id="why">
+      <div class="sheet__intro">
+        <p class="sheet__kicker">Почему сейчас</p>
+        <h2 class="sheet__title">Есть окна в графике до конца сезона</h2>
+      </div>
+      <div class="why-grid">
+        <article class="why-card">
+          <h3>Окна в графике бригады</h3>
+          <p>Можно успеть закрыть участок до холодов, пока есть свободные дни.</p>
+        </article>
+        <article class="why-card">
+          <h3>Предложение по вашей заявке</h3>
+          <p>Не общая витрина для всех: менеджер считает ваш объект и даёт ориентир.</p>
+        </article>
+        <article class="why-card">
+          <h3>Один подрядчик</h3>
+          <p>Материал и работы в одном цикле - меньше переделок и стыков «кто за что».</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sheet sheet--cases" id="cases">
+      <div class="sheet__intro">
+        <p class="sheet__kicker">Примеры работ</p>
+        <h2 class="sheet__title">Как участок из стройки становится садом</h2>
+        <p class="sheet__lead">
+          Три разных типа участков. Выберите свой - посмотрите «до», этапы и результат.
+        </p>
+      </div>
+
+      <div class="case-tabs" role="tablist" aria-label="Типы участков">
+        <button type="button" class="case-tab is-active" role="tab" aria-selected="true" data-case="dacha" id="tab-dacha">Дача</button>
+        <button type="button" class="case-tab" role="tab" aria-selected="false" data-case="house" id="tab-house">Частный дом</button>
+        <button type="button" class="case-tab" role="tab" aria-selected="false" data-case="cottage" id="tab-cottage">Коттедж</button>
+      </div>
+
+      <article class="case-panel is-active" id="panel-dacha" role="tabpanel" aria-labelledby="tab-dacha" data-case="dacha">
+        <div class="case-panel__meta">
+          <p class="case-panel__type">Дача · СНТ</p>
+          <h3 class="case-panel__title">От сорняков и колеи к ровному газону и грядкам</h3>
+          <ul class="case-panel__facts">
+            <li><strong>~180 м²</strong> озеленения</li>
+            <li><strong>2 дня</strong> на объекте</li>
+            <li>Газон, дорожка, ягодник, хвойные у входа</li>
+          </ul>
+        </div>
+
+        <div class="case-compare">
+          <figure class="case-shot">
+            <img src="assets/cases/dacha/01-before.jpg" alt="Дача до озеленения: сорняки и голая земля" width="1400" height="788" loading="lazy" />
+            <figcaption>До</figcaption>
+          </figure>
+          <figure class="case-shot">
+            <img src="assets/cases/dacha/03-after.jpg" alt="Дача после озеленения: газон и посадки" width="1400" height="788" loading="lazy" />
+            <figcaption>После</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-stages">
+          <h4>Этапы работ</h4>
+          <ol>
+            <li><span>01</span> Замер и план посадок под дачный ритм</li>
+            <li><span>02</span> Подготовка основания, выравнивание</li>
+            <li><span>03</span> Укладка рулонного газона</li>
+            <li><span>04</span> Дорожка, грядки, хвойные у входа</li>
+            <li><span>05</span> Сдача и рекомендации по уходу</li>
+          </ol>
+        </div>
+
+        <div class="case-gallery">
+          <figure>
+            <img src="assets/cases/dacha/02-process.jpg" alt="Процесс укладки газона на даче" width="1400" height="788" loading="lazy" />
+            <figcaption>В работе</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/cases/dacha/04-detail.jpg" alt="Деталь готовых посадок на даче" width="1400" height="788" loading="lazy" />
+            <figcaption>Деталь результата</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="case-panel" id="panel-house" role="tabpanel" aria-labelledby="tab-house" data-case="house" hidden>
+        <div class="case-panel__meta">
+          <p class="case-panel__type">Частный дом · посёлок</p>
+          <h3 class="case-panel__title">Из стройплощадки во двор, куда зовут гостей</h3>
+          <ul class="case-panel__facts">
+            <li><strong>~320 м²</strong> озеленения</li>
+            <li><strong>3 дня</strong> на объекте</li>
+            <li>Газон, цветники у фасада, посадки вдоль забора</li>
+          </ul>
+        </div>
+
+        <div class="case-compare">
+          <figure class="case-shot">
+            <img src="assets/cases/house/01-before.jpg" alt="Двор частного дома до озеленения" width="1400" height="788" loading="lazy" />
+            <figcaption>До</figcaption>
+          </figure>
+          <figure class="case-shot">
+            <img src="assets/cases/house/03-after.jpg" alt="Двор частного дома после озеленения" width="1400" height="788" loading="lazy" />
+            <figcaption>После</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-stages">
+          <h4>Этапы работ</h4>
+          <ol>
+            <li><span>01</span> Замер и план под семью и зону отдыха</li>
+            <li><span>02</span> Уборка остатков стройки, подготовка основания</li>
+            <li><span>03</span> Укладка рулонного газона</li>
+            <li><span>04</span> Цветники у фасада и посадки вдоль забора</li>
+            <li><span>05</span> Сдача и рекомендации по уходу</li>
+          </ol>
+        </div>
+
+        <div class="case-gallery">
+          <figure>
+            <img src="assets/cases/house/02-process.jpg" alt="Процесс озеленения частного дома" width="1400" height="788" loading="lazy" />
+            <figcaption>В работе</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/cases/house/04-detail.jpg" alt="Деталь цветника у дома" width="1400" height="788" loading="lazy" />
+            <figcaption>Деталь результата</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="case-panel" id="panel-cottage" role="tabpanel" aria-labelledby="tab-cottage" data-case="cottage" hidden>
+        <div class="case-panel__meta">
+          <p class="case-panel__type">Коттедж · КП</p>
+          <h3 class="case-panel__title">Пустой участок после сдачи дома - в сад мечты</h3>
+          <ul class="case-panel__facts">
+            <li><strong>~450 м²</strong> озеленения</li>
+            <li><strong>4 дня</strong> на объекте</li>
+            <li>Газон, входная группа, композиции у террасы</li>
+          </ul>
+        </div>
+
+        <div class="case-compare">
+          <figure class="case-shot">
+            <img src="assets/cases/cottage/01-before.jpg" alt="Участок коттеджа до озеленения" width="1400" height="788" loading="lazy" />
+            <figcaption>До</figcaption>
+          </figure>
+          <figure class="case-shot">
+            <img src="assets/cases/cottage/03-after.jpg" alt="Участок коттеджа после озеленения" width="1400" height="788" loading="lazy" />
+            <figcaption>После</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-stages">
+          <h4>Этапы работ</h4>
+          <ol>
+            <li><span>01</span> Замер и план входной группы и периметра</li>
+            <li><span>02</span> Подготовка основания после техники</li>
+            <li><span>03</span> Укладка рулонного газона</li>
+            <li><span>04</span> Хвойные и многолетники у входа и террасы</li>
+            <li><span>05</span> Сдача и рекомендации по уходу</li>
+          </ol>
+        </div>
+
+        <div class="case-gallery">
+          <figure>
+            <img src="assets/cases/cottage/02-process.jpg" alt="Процесс озеленения коттеджа" width="1400" height="788" loading="lazy" />
+            <figcaption>В работе</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/cases/cottage/04-detail.jpg" alt="Деталь входной группы коттеджа" width="1400" height="788" loading="lazy" />
+            <figcaption>Деталь результата</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <div class="case-cta">
+        <a class="btn btn--primary" href="#lead-bottom">Хочу такой результат на своём участке</a>
+      </div>
+    </section>
+
+    <section class="sheet" id="includes">
+      <div class="sheet__intro">
+        <p class="sheet__kicker">Что входит</p>
+        <h2 class="sheet__title">От подбора решения до сдачи</h2>
+      </div>
+      <ul class="includes">
+        <li>Подбор решения под участок</li>
+        <li>Рулонный газон</li>
+        <li>Посадки и композиции</li>
+        <li>Реализация и монтаж</li>
+        <li>При необходимости - подготовка основания</li>
+        <li>Сопровождение после сдачи (Служба заботы)</li>
+      </ul>
+      <p class="sheet__note">Минимальный объём - от 100&nbsp;м². Газон и растения выращиваем сами.</p>
+    </section>
+
+    <section class="sheet sheet--soft" id="how">
+      <div class="sheet__intro">
+        <p class="sheet__kicker">Как проходит</p>
+        <h2 class="sheet__title">Четыре шага до готового участка</h2>
+      </div>
+      <ol class="steps">
+        <li><strong>01</strong><span>Оставляете заявку</span></li>
+        <li><strong>02</strong><span>Менеджер перезванивает, уточняет участок и даёт ориентир</span></li>
+        <li><strong>03</strong><span>Согласование объёма</span></li>
+        <li><strong>04</strong><span>Выполнение работ</span></li>
+      </ol>
+    </section>
+
+    <section class="sheet" id="doubts">
+      <div class="sheet__intro">
+        <p class="sheet__kicker">Частые сомнения</p>
+        <h2 class="sheet__title">Коротко по делу</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item">
+          <summary>Дорого, не заложили бюджет</summary>
+          <p>По заявке разберём объём и дадим предложение без лишнего.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Долго</summary>
+          <p>Сжимаем сроки под сезон и график бригады.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Не приживётся</summary>
+          <p>Материал с сибирской адаптацией плюс рекомендации по уходу.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Не знаю, с чего начать</summary>
+          <p>Менеджер поможет оценить участок по телефону.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="sheet sheet--form" id="lead-bottom">
+      <div class="form-layout">
+        <div class="form-aside">
+          <p class="sheet__kicker sheet__kicker--accent">Получить предложение</p>
+          <h2 class="sheet__title sheet__title--sm">Участок, куда хочется возвращаться</h2>
+          <p class="sheet__lead">Оставьте заявку - посчитаем объект и дадим предложение под финал сезона.</p>
+          <a class="form-aside__phone" href="tel:+73833830060">+7 (383) 383-00-60</a>
+        </div>
+
+        <form class="lead-form" data-landing-form data-form-id="bottom" novalidate>
+          <label class="field">
+            <span class="field__label">Имя</span>
+            <input class="field__input" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required />
+          </label>
+          <label class="field">
+            <span class="field__label">Телефон</span>
+            <input class="field__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required />
+          </label>
+          <label class="field">
+            <span class="field__label">Посёлок или комментарий <span class="muted">необязательно</span></span>
+            <input class="field__input" name="comment" type="text" placeholder="Стадия стройки, что хотите на участке" />
+          </label>
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>Согласен на обработку персональных данных для связи и консультации</span>
+          </label>
+          <p class="form-error is-hidden" data-form-error role="alert"></p>
+          <button type="submit" class="btn btn--primary btn--full">Получить предложение</button>
+          <p class="form-hint">Обычно перезваниваем в течение рабочего дня · без спама</p>
+          <p class="form-note">Берём объекты от 100&nbsp;м²</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="sheet sheet--success is-hidden" id="success" aria-live="polite">
+      <div class="success">
+        <img class="success__logo" src="assets/logo.webp" width="180" height="52" alt="Сибирские газоны" />
+        <p class="sheet__kicker sheet__kicker--accent">Заявка принята</p>
+        <h2 class="sheet__title sheet__title--sm">Перезвоним и разберём ваш участок</h2>
+        <p class="success__text">Менеджер свяжется в рабочее время, уточнит объект и даст предложение.</p>
+        <a class="btn btn--outline btn--full" href="tel:+73833830060">Позвонить +7 (383) 383-00-60</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="footer__logo" src="assets/logo.webp" width="140" height="40" alt="" aria-hidden="true" />
+    <p>© Сибирские газоны · <a href="https://gazony.ru" target="_blank" rel="noopener">gazony.ru</a></p>
+    <p><a href="tel:+73833830060">+7 (383) 383-00-60</a></p>
+    <p class="footer__fine">Озеленение от 100&nbsp;м² · Новосибирск и область · предложение по заявке</p>
+  </footer>
+
+  <div class="sticky-cta" id="sticky-cta">
+    <a class="btn btn--primary sticky-cta__btn" href="#lead-hero">Получить предложение</a>
+    <a class="sticky-cta__call" href="tel:+73833830060" aria-label="Позвонить">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6.6 10.8a15.9 15.9 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/>
+      </svg>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
